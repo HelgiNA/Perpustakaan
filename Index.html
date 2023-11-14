@@ -509,10 +509,11 @@
                     <button class="btn btn-primary" type="submit">Simpan</button>
                   </div>
                 </div>
+              </form>
             </div>
 
             <!-- formulir Pengembalian Buku -->
-            <div aria-label="tampilan form Pengembalian" class="container p-3" style="display: none">
+            <div aria-label="tampilan form Pengembalian" class="container p-3" style="display: ">
               <p class="h2">Form Pengembalian Buku</p>
               <hr>
               <form action="">
@@ -597,21 +598,21 @@
                     <button class="btn btn-primary" type="submit">Simpan</button>
                   </div>
                 </div>
+              </form>
             </div>
           </div>
         </div>
-      </div>
-      <script src="Framework/YearPicker/dist/yearpicker.js"></script>
-      <script>
-        $(".YP").yearpicker()
+        <script src="Framework/YearPicker/dist/yearpicker.js"></script>
+        <script>
+          $(".YP").yearpicker()
 
 
-        $(".DP").datepicker({
-          showButtonPanel: true,
-          dateFormat: "d M yy"
-        });
-      </script>
-      <script src="main.js"></script>
+          $(".DP").datepicker({
+            showButtonPanel: true,
+            dateFormat: "d M yy"
+          });
+        </script>
+        <script src="main.js"></script>
 </body>
 
 </html>
