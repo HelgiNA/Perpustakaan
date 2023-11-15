@@ -2,11 +2,8 @@
   padding: 15px 18.75px 15px 18.75px;
 }
 
-table td {
-  font-size: 15px;
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
   table {
     border: 0;
   }
@@ -16,7 +13,16 @@ table td {
   }
 
   table thead {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 
+  table th {
     clip: rect(0 0 0 0);
     height: 1px;
     margin: -1px;
@@ -48,6 +54,7 @@ table td {
   }
 
   table td:last-child {
+    text-align: center;
     border-bottom: 0;
   }
 }
