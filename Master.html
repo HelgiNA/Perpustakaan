@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="Framework/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="Framework/bootstrap/dist/css/docs.css">
   <script src="Framework/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Framework/Me/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="Framework/YearPicker/dist/yearpicker.css">
   <script src="Framework/YearPicker/src/js/jquery-3.3.1.slim.min.js">
     <script src="Framework/YearPicker/src/js/jquery.min.js">
   </script>
-  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="Framework/Me/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -34,7 +34,7 @@
       <div class="gap-3 p-2 col-md-3">
         <div class="col-mb-12">
           <div class="rounded-2 bg-body">
-            
+            <?php include 'Navbar/ProfileAndBar.html';?>
           </div>
         </div>
       </div>
@@ -42,10 +42,11 @@
       <!-- Konten kanan -->
       <div class="gap-3 p-2 col-md-9">
         <div class="col-mb-12">
-          <div class="rounded-2 bg-body">
+          <div class="rounded-2 bg-body" id="KKanan">
             
           </div>
         </div>
+      </div>
         
         <script src="Framework/YearPicker/dist/yearpicker.js"></script>
         <script>
@@ -56,7 +57,7 @@
             dateFormat: "d M yy"
           });
         </script>
-        <script src="main.js"></script>
+        <script src="Framework/Me/main.js"></script>
 </body>
 
 </html>
