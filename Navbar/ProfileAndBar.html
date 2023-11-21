@@ -46,9 +46,9 @@
         <div id="panelsStayOpen-1" class="accordion-collapse collapse">
           <div class="accordion-body">
             <!-- Button Daftar Buku -->
-            <div class="collapsed">
+            <div class="collapsed" onclick="BMenu()">
               <div class="P-101">
-                <a class="text-decoration-none text-black" href=""
+                <a class="text-decoration-none text-black"
                   >Daftar Buku</a
                 >
               </div>
@@ -298,5 +298,10 @@
       </div>
       <!-- end menu -->
     </div>
+    <script>
+    function BMenu(n) {
+document.getElementById(KKanan).innerHTML = "<?php include 'Menu/DaftarBuku.html';?>"
+}
+    </script>
   </body>
 </html>
