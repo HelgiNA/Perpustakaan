@@ -34,7 +34,6 @@
 
   table tr {
     display: block;
-    margin-bottom: 0.625em;
   }
 
   table td {
@@ -54,7 +53,7 @@
   }
 
   table td:last-child {
-    text-align: center;
+    text-align: end;
     border-bottom: 0;
   }
 }
@@ -72,8 +71,4 @@
 .sc {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-
-.CKMenu {
-  display: none;
 }
