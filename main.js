@@ -1,6 +1,8 @@
 function myFunction() {
-
-  if (document.getElementById("flush-1").getAttribute("data-bs-parent") == "#accordionFlushExample") {
+  if (
+    document.getElementById("flush-1").getAttribute("data-bs-parent") ==
+    "#accordionFlushExample"
+  ) {
     document.getElementById("flush-1").removeAttribute("data-bs-parent");
     document.getElementById("flush-2").removeAttribute("data-bs-parent");
     document.getElementById("flush-3").removeAttribute("data-bs-parent");
@@ -14,12 +16,9 @@ function myFunction() {
   // for (var i = 0; i < 3; i++) {
   //  document.getElementById("flush-"+i).setAttribute("data-bs-parent","");
   //  }
-
 }
 
-
 function jml(n) {
-
   var jmlT = 0;
   jmlT = document.getElementById("iJml").value;
   var hJml = add(jmlT);
@@ -37,7 +36,6 @@ function jml(n) {
 }
 
 function hrg(n) {
-
   var hrgT = 0;
   hrgT = document.getElementById("iHrg").value;
   var hHrg = add(hrgT);
@@ -55,7 +53,6 @@ function hrg(n) {
 }
 
 function S(n) {
-
   var ST = 0;
   ST = document.getElementById("iS").value;
   var hS = add(ST);
@@ -90,10 +87,10 @@ function showS(n) {
 
 function FCariNm() {
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('iCariNm');
+  input = document.getElementById("iCariNm");
   filter = input.value.toUpperCase();
   ul = document.getElementById("dItem");
-  li = ul.getElementsByTagName('li');
+  li = ul.getElementsByTagName("li");
   //document.getElementById("iNmAnggota").setAttribute("data-bs-toggle", "dropdown");
 
   for (i = 0; i < li.length; i++) {
@@ -106,19 +103,18 @@ function FCariNm() {
       li[i].style.display = "none";
     }
   }
-
 }
 
 function dI(n) {
   var ul, li, a, txtValue;
   ul = document.getElementById("dItem");
-  li = ul.getElementsByTagName('li');
+  li = ul.getElementsByTagName("li");
   a = li[n].getElementsByTagName("a")[0];
   txtValue = a.textContent || a.innerText;
   document.getElementById("iNmAnggota").value = txtValue;
 }
 
-let tb,tr;
+let tb, tr;
 tb = document.getElementById("Tb");
 tr = tb.getElementsByTagName("tr");
 if (tr.length >= 1) {
@@ -134,15 +130,24 @@ if (tr.length >= 1) {
 }
 
 function myFunction() {
-  let checkBox,text,IGV1;
+  let checkBox, text, IGV1;
   checkBox = document.getElementById("myCheck");
   text = document.getElementById("IChK");
   IGV1 = document.getElementById("IG1");
-  if (checkBox.checked == true){
+  if (checkBox.checked == true) {
     text.style.display = "block";
     IGV1.className = "input-group";
   } else {
     text.style.display = "none";
     IGV1.classList.remove("input-group");
   }
+}
+
+function BMenu(n) {
+  let i = document.getElementsByClassName("CKMenu");
+  for (let e = 0; e < i.length; e++) {
+    i[e].style.display = "none";
+  }
+
+  document.getElementById("IBMenu(" + n + ")").style.display = "block";
 }

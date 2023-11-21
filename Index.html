@@ -55,14 +55,14 @@
                 <div class="accordion-body">
 
                   <!-- Button Daftar Buku -->
-                  <div class="collapsed">
-                    <div class="P-101"><a class="text-decoration-none text-black" href="">Daftar Buku</a>
+                  <div class="collapsed" onclick="BMenu(1)">
+                    <div class="P-101"><a class="text-decoration-none text-black">Daftar Buku</a>
                     </div>
                   </div>
 
                   <!-- Button Tambah Buku -->
-                  <div class=" collapsed">
-                    <div class="P-101"><a class="text-decoration-none text-black" href="">Tambah Buku</a>
+                  <div class=" collapsed" onclick="BMenu(2)">
+                    <div class="P-101"><a class="text-decoration-none text-black">Tambah Buku</a>
                     </div>
                   </div>
                   <div>
@@ -144,8 +144,8 @@
               </h2>
               <div id="panelsStayOpen-A2" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <div class="collapsed">
-                    <div class="P-101"><a class="text-decoration-none text-black" href="">Peminjaman Buku</a>
+                  <div class="collapsed nav-link" data-bs-toggle="pill" data-bs-target="#pills-PeminjamanBuku" >
+                    <div class="P-101"><a class="text-decoration-none text-black">Peminjaman Buku</a>
                     </div>
                   </div>
                   <div class="collapsed">
@@ -214,10 +214,10 @@
       <!-- Konten kanan -->
       <div class="gap-3 p-2 col-md-9">
         <div class="col-mb-12">
-          <div class="rounded-2 bg-body">
+          <div class="rounded-2 bg-body" id="KKanan">
 
             <!-- Tampilan Daftar Buku -->
-            <div aria-label="Tampilan Daftar Buku" style="display: ;">
+            <div id="IBMenu(1)" class="CKMenu" aria-label="Tampilan Daftar Buku">
               <form class="table-we" action="" method="get" accept-charset="utf-8">
                 <div class="p-2 row g-0">
                   <div class="p-2 col-12 col-md-4">
@@ -313,7 +313,7 @@
             </div>
 
             <!-- Tampilan Formulir Buku -->
-            <div aria-label="tampilan form buku" class="container p-3" style="display: none">
+            <div id="IBMenu(2)"  aria-label="tampilan form buku" class="CKMenu container p-3">
               <p class="h2">Form Buku</p>
               <hr>
               <form class="" target="">
@@ -409,7 +409,7 @@
             </div>
 
             <!-- formulir Peminjaman Buku -->
-            <div aria-label="tampilan form Peminjaman" class="container p-3" style="display: none">
+            <div id="pills-PeminjamanBuku"  aria-label="tampilan form Peminjaman" class="tab-pane fade container p-3" tabindex="0">
               <p class="h2">Form Peminjaman Buku</p>
               <hr>
               <form action="">
@@ -513,7 +513,7 @@
             </div>
 
             <!-- formulir Pengembalian Buku -->
-            <div aria-label="tampilan form Pengembalian" class="container p-3" style="display: none">
+            <div id="IBMenu(4)"  aria-label="tampilan form Pengembalian" class="CKMenu container p-3">
               <p class="h2">Form Pengembalian Buku</p>
               <hr>
               <form action="">
@@ -602,7 +602,7 @@
             </div>
             
             <!-- formulir Tambah Anggota -->
-            <div aria-label="tampilan form tambah anggota" class="container p-3" style="display: none;">
+            <div id="IBMenu(5)"  aria-label="tampilan form tambah anggota" class="CKMenu container p-3">
               <p class="h2">Form Anggota</p>
               <hr>
               <form action="" method="post">

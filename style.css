@@ -1,7 +1,7 @@
 .P-101 {
   padding: 15px 18.75px 15px 18.75px;
+  cursor: pointer;
 }
-
 
 @media screen and (max-width: 780px) {
   table {
@@ -34,7 +34,7 @@
 
   table tr {
     display: block;
-    margin-bottom: .625em;
+    margin-bottom: 0.625em;
   }
 
   table td {
@@ -65,11 +65,15 @@
 }
 
 .sc::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .sc {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.CKMenu {
+  display: none;
 }
