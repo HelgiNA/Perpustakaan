@@ -55,8 +55,8 @@
                 <div class="accordion-body">
 
                   <!-- Button Daftar Buku -->
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-DaftarBuku">
-                    <div class="P-101"><a class="text-decoration-none text-black">Daftar Buku</a>
+                  <div class="collapsed" onclick="loadDoc(0)" loss-t="DaftarBuku">
+                    <div class="P-101"><a class="MNH text-decoration-none text-black">Daftar Buku</a>
                     </div>
                   </div>
 
@@ -229,8 +229,6 @@
           <div class="rounded-2 bg-body tab-content">
 
             <?php 
-
-            include("Menu/Buku/DaftarBuku.php");
             include("Menu/Buku/TambahBuku.php");
 
             include("Menu/Transaksi/PengembalianBuku.php");
@@ -245,7 +243,7 @@
             ?>
 
             
-
+            <div id="demo"></div>
             
 
             
@@ -290,9 +288,6 @@
             </div>
 
             
-            
-            
-            
           </div>
         </div>
         <script src="Framework/YearPicker/dist/yearpicker.js"></script>
@@ -305,6 +300,18 @@
             dateFormat: "d M yy"
           });
         </script>
+        <script>
+          function loadDoc() {
+            const MenuH = document.getElementsByClassName("MNH");
+            let txt = 
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "Menu/Buku/"++".php");
+  xhttp.send();
+}
+          </script>
         <script src="main.js"></script>
 </body>
 

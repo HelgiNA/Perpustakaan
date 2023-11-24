@@ -1,7 +1,5 @@
 <!-- Tampilan Daftar Buku -->
 <div
-  class="tab-pane fade"
-  id="v-pills-DaftarBuku"
   aria-label="Tampilan Daftar Buku"
 >
   <form class="table-we" action="" method="get" accept-charset="utf-8">
@@ -45,15 +43,7 @@
         </thead>
         <tbody class="">
           <?php
-
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$datadb = "perpustakaan";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $datadb);
-
+          include("../../Koneksi.php");
             $sql = "SELECT * FROM buku";
             $result = $conn->query($sql);
             
