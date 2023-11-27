@@ -1,5 +1,5 @@
 <!-- Tampilan Daftar Buku Hilang -->
-<div class="tab-pane fade" id="v-pills-DaftarBukuHilang" aria-label="Tampilan Daftar Buku Holang">
+<div aria-label="Tampilan Daftar Buku Holang">
               <p class="p-3 h2">Daftar Buku Hilang</p>
               <hr>
               <form class="table-we" action="" method="get" accept-charset="utf-8">

@@ -34,191 +34,9 @@
       <div class="gap-3 p-2 col-md-3">
         <div class="col-mb-12">
           <div class="rounded-2 bg-body">
-            <div class="container p-2 text-center">
-              <p class=""><img src="pf.jpeg" alt="photo profil" class="rounded-circle" style="height: 108px; width: 108px;"></p>
-              <p class="fs-1">Nama Testing</p>
-              <p class="">Petugas</p>
+            <div id="Sidebar">
+              <script src="Sidebar/src/main.js"></script>
             </div>
-
-            <!-- Menu -->
-            <div class="accordion" id="accordionPanelsStayOpenExample" role="tablist">
-
-              <!-- Button Buku -->
-              <h2 class="accordion-header">
-                <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1" aria-expanded="false" aria-controls="panelsStayOpen-1">
-                  Buku
-                </button>
-              </h2>
-
-              <!-- Isi Buku -->
-              <div id="panelsStayOpen-1" class="accordion-collapse collapse">
-                <div class="accordion-body">
-
-                  <!-- Button Daftar Buku -->
-                  <div class="collapsed" onclick="loadDoc(0)" loss-t="DaftarBuku">
-                    <div class="P-101"><a class="MNH text-decoration-none text-black">Daftar Buku</a>
-                    </div>
-                  </div>
-
-                  <!-- Button Tambah Buku -->
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-TambahBuku">
-                    <div class="P-101"><a class="text-decoration-none text-black">Tambah Buku</a>
-                    </div>
-                  </div>
-                  <div>
-
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-B1" aria-expanded="false" aria-controls="panelsStayOpen-B1">
-                        Kategori
-                      </Button>
-                    </h2>
-                    <div id="panelsStayOpen-B1" class="accordion-collapse collapse">
-                      <div class="accordion-body">
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Novel</a>
-                          </div>
-                        </div>
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Manga</a>
-                          </div>
-                        </div>
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Manhua</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-B2" aria-expanded="false" aria-controls="panelsStayOpen-B2">
-                        Penerbit
-                      </Button>
-                    </h2>
-                    <div id="panelsStayOpen-B2" class="accordion-collapse collapse">
-                      <div class="accordion-body">
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Novel</a>
-                          </div>
-                        </div>
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Manga</a>
-                          </div>
-                        </div>
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Manhua</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-B3" aria-expanded="false" aria-controls="panelsStayOpen-B3">
-                        Pengarang
-                      </Button>
-                    </h2>
-                    <div id="panelsStayOpen-B3" class="accordion-collapse collapse">
-                      <div class="accordion-body">
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Novel</a>
-                          </div>
-                        </div>
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Manga</a>
-                          </div>
-                        </div>
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Manhua</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="accordion-header">
-                <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-A2" aria-expanded="false" aria-controls="panelsStayOpen-A2">
-                  Transaksi
-                </button>
-              </h2>
-              <div id="panelsStayOpen-A2" class="accordion-collapse collapse">
-
-                <div class="accordion-body">
-
-                  <!-- button Peminjaman Buku -->
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-PeminjamanBuku">
-                    <div class="P-101"><a class="text-decoration-none text-black">Peminjaman Buku</a>
-                    </div>
-                  </div>
-
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-PengembalianBuku">
-                    <div class="P-101"><a class="text-decoration-none text-black">Pengembalian Buku</a>
-                    </div>
-                  </div>
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-DaftarPeminjaman">
-                    <div class="P-101"><a class="text-decoration-none text-black">Daftar Peminjaman</a>
-                    </div>
-                  </div>
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-DaftarBukuHilang">
-                    <div class="P-101"><a class="text-decoration-none text-black">Daftar Buku Hilang</a>
-                    </div>
-                  </div>
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-DaftarPengembalian">
-                    <div class="P-101"><a class="text-decoration-none text-black">Daftar Pengembalian</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="accordion-header">
-                <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-A3" aria-expanded="false" aria-controls="panelsStayOpen-A3">
-                  Anggota
-                </button>
-              </h2>
-              <div id="panelsStayOpen-A3" class="accordion-collapse collapse">
-                <div class="accordion-body">
-
-                  <!-- button Daftar Anggota -->
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-DaftarAnggota">
-                    <div class="P-101"><a class="text-decoration-none text-black">Daftar Anggota</a>
-                    </div>
-                  </div>
-
-                  <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-TambahAnggota">
-                    <div class="P-101"><a class="text-decoration-none text-black">Tambah Anggota</a>
-                    </div>
-                  </div>
-
-                  <div class="collapsed">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-G1" aria-expanded="false" aria-controls="panelsStayOpen-G1">
-                        Grup Anggota
-                      </Button>
-                    </h2>
-                    <div id="panelsStayOpen-G1" class="accordion-collapse collapse">
-                      <div class="accordion-body">
-
-                        <!-- button Daftar Buku -->
-                        <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-Daftar">
-                          <div class="P-101"><a class="text-decoration-none text-black">Daftar Grup</a>
-                          </div>
-                        </div>
-
-                        <div class="collapsed">
-                          <div class="P-101"><a class="text-decoration-none text-black">Tambah Grup</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="invisible">
-                H. N. A.
-              </div>
-            </div>
-            <!-- end menu -->
           </div>
         </div>
       </div>
@@ -228,90 +46,22 @@
         <div class="col-mb-12">
           <div class="rounded-2 bg-body tab-content">
 
-            <?php 
-            include("Menu/Buku/TambahBuku.php");
-
-            include("Menu/Transaksi/PengembalianBuku.php");
-            include("Menu/Transaksi/PeminjamanBuku.php");
-            include("Menu/Transaksi/DaftarPeminjaman.php");
-            include("Menu/Transaksi/DaftarBukuHilang.php");
-            include("Menu/Transaksi/DaftarPengembalian.php");
-
-            
-            include("Menu/Anggota/DaftarAnggota.php");
-            include("Menu/Anggota/TambahAnggota.php");
-            ?>
-
-            
             <div id="demo"></div>
-            
+            <script src="Menu/Buku/src/main.js"></script>
 
-            
-
-            <!-- Tampilan Informasi Buku -->
-            <div aria-label="Tampilan Informasi Buku" class="tab-pane fade" id="v-pills-InformasiBuku">
-              <table class="table table-striped table-borderless">
-                <tr aria-label="Judul">
-                  <th>Judul</th>
-                  <td data-label="Judul">Keep A Low Profile, Sect Leader</td>
-                </tr>
-                <tr>
-                  <th>Deskripsi</th>
-                  <td data-label="Deskripsi">ini Deskripsi</td>
-                </tr>
-                <tr>
-                  <th>ISBN</th>
-                  <td data-label="ISBN">213131</td>
-                </tr>
-                <tr>
-                  <th>TSBN 13</th>
-                  <td data-label="ISBN 13">212131231</td>
-                </tr>
-                <tr aria-label="Judul">
-                  <th>Judul</th>
-                  <td data-label="Judul">Keep A Low Profile, Sect Leader</td>
-                </tr>
-                <tr>
-                  <th>Deskripsi</th>
-                  <td data-label="Deskripsi">ini Deskripsi</td>
-                </tr>
-                <tr>
-                  <th>ISBN</th>
-                  <td data-label="ISBN">213131</td>
-                </tr>
-                <tr>
-                  <th>TSBN 13</th>
-                  <td data-label="ISBN 13">212131231</td>
-                </tr>
-                <tr></tr>
-              </table>
-            </div>
-
-            
           </div>
         </div>
+      </div>
         <script src="Framework/YearPicker/dist/yearpicker.js"></script>
         <script>
-          $(".YP").yearpicker()
-
-
-          $(".DP").datepicker({
-            showButtonPanel: true,
-            dateFormat: "d M yy"
-          });
+          // Fungsj
+          const xhttp1 = new XMLHttpRequest();
+          xhttp1.onload = function() {
+            document.getElementById("Sidebar").innerHTML = this.responseText;
+          }
+          xhttp1.open("GET", "Sidebar/Side.html");
+          xhttp1.send();
         </script>
-        <script>
-          function loadDoc() {
-            const MenuH = document.getElementsByClassName("MNH");
-            let txt = 
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "Menu/Buku/"++".php");
-  xhttp.send();
-}
-          </script>
         <script src="main.js"></script>
 </body>
 

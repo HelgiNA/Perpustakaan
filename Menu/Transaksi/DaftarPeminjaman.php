@@ -1,5 +1,5 @@
 <!-- Tampilan Daftar Peminjaman -->
-<div aria-label="Tampilan Daftar Peminjaman" class="tab-pane fade" id="v-pills-DaftarPeminjaman">
+<div aria-label="Tampilan Daftar Peminjaman">
               <p class="p-3 h2">Daftar Peminjaman</p>
               <hr>
               <form class="table-we" action="" method="get" accept-charset="utf-8">

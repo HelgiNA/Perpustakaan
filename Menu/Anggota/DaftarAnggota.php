@@ -1,6 +1,6 @@
-<!-- Tampilan Daftar Anggota -->
-<div aria-label="Tampilan Daftar Anggota" class="tab-pane fade" id="v-pills-DaftarAnggota">
-              <p class="p-3 h2">Daftar Anggota</p>
+            <!-- Tampilan Daftar Anggota -->
+            <div aria-label="Tampilan Daftar Anggota">
+             <p class="p-3 h2">Daftar Anggota</p>
               <hr>
               <form class="table-we" action="" method="get" accept-charset="utf-8">
                 <div class="p-2 row g-0">

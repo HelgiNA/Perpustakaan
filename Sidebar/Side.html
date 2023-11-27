@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <div class="container p-2 text-center">
+    <p class=""><img src="pf.jpeg" alt="photo profil" class="rounded-circle" style="height: 108px; width: 108px;"></p>
+    <p class="fs-1">Nama Testing</p>
+    <p class="">Petugas</p>
+  </div>
+
+  <!-- Menu -->
+  <div class="accordion" id="accordionPanelsStayOpenExample" role="tablist">
+
+    <!-- Button Buku -->
+    <h2 class="accordion-header">
+      <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1" aria-expanded="false" aria-controls="panelsStayOpen-1">
+        Buku
+      </button>
+    </h2>
+
+    <!-- Isi Buku -->
+    <div id="panelsStayOpen-1" class="accordion-collapse collapse">
+      <div class="accordion-body">
+
+        <!-- Button Daftar Buku -->
+        <div class="collapsed" onclick="loadDoc('Buku', 'DaftarBuku')">
+          <div class="P-101"><a class="MNH text-decoration-none text-black">Daftar Buku</a>
+          </div>
+        </div>
+
+        <!-- Button Tambah Buku -->
+        <div class="collapsed" onclick="loadDoc('Buku', 'TambahBuku')">
+          <div class="P-101"><a class="text-decoration-none text-black">Tambah Buku</a>
+          </div>
+        </div>
+        <div>
+
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-B1" aria-expanded="false" aria-controls="panelsStayOpen-B1">
+              Kategori
+            </Button>
+          </h2>
+          <div id="panelsStayOpen-B1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Novel</a>
+                </div>
+              </div>
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Manga</a>
+                </div>
+              </div>
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Manhua</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-B2" aria-expanded="false" aria-controls="panelsStayOpen-B2">
+              Penerbit
+            </Button>
+          </h2>
+          <div id="panelsStayOpen-B2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Novel</a>
+                </div>
+              </div>
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Manga</a>
+                </div>
+              </div>
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Manhua</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-B3" aria-expanded="false" aria-controls="panelsStayOpen-B3">
+              Pengarang
+            </Button>
+          </h2>
+          <div id="panelsStayOpen-B3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Novel</a>
+                </div>
+              </div>
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Manga</a>
+                </div>
+              </div>
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Manhua</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="accordion-header">
+      <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-A2" aria-expanded="false" aria-controls="panelsStayOpen-A2">
+        Transaksi
+      </button>
+    </h2>
+    <div id="panelsStayOpen-A2" class="accordion-collapse collapse">
+
+      <div class="accordion-body">
+
+        <!-- button Peminjaman Buku -->
+        <div class="collapsed" onclick="loadDoc('Transaksi', 'PeminjamanBuku')">
+          <div class="P-101"><a class="text-decoration-none text-black">Peminjaman Buku</a>
+          </div>
+        </div>
+
+        <div class="collapsed" onclick="loadDoc('Transaksi', 'PengembalianBuku')">
+          <div class="P-101"><a class="text-decoration-none text-black">Pengembalian Buku</a>
+          </div>
+        </div>
+        <div class="collapsed" onclick="loadDoc('Transaksi', 'DaftarPeminjaman')">
+          <div class="P-101"><a class="text-decoration-none text-black">Daftar Peminjaman</a>
+          </div>
+        </div>
+        <div class="collapsed" onclick="loadDoc('Transaksi', 'DaftarBukuHilang')">
+          <div class="P-101"><a class="text-decoration-none text-black">Daftar Buku Hilang</a>
+          </div>
+        </div>
+        <div class="collapsed" onclick="loadDoc('Transaksi', 'DaftarPengembalian')">
+          <div class="P-101"><a class="text-decoration-none text-black">Daftar Pengembalian</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="accordion-header">
+      <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-A3" aria-expanded="false" aria-controls="panelsStayOpen-A3">
+        Anggota
+      </button>
+    </h2>
+    <div id="panelsStayOpen-A3" class="accordion-collapse collapse">
+      <div class="accordion-body">
+
+        <!-- button Daftar Anggota -->
+        <div class="collapsed" onclick="loadDoc('Anggota', 'DaftarAnggota')">
+          <div class="P-101"><a class="text-decoration-none text-black">Daftar Anggota</a>
+          </div>
+        </div>
+
+        <div class="collapsed" onclick="loadDoc('Anggota', 'TambahAnggota')">
+          <div class="P-101"><a class="text-decoration-none text-black">Tambah Anggota</a>
+          </div>
+        </div>
+
+        <div class="collapsed">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-G1" aria-expanded="false" aria-controls="panelsStayOpen-G1">
+              Grup Anggota
+            </Button>
+          </h2>
+          <div id="panelsStayOpen-G1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+
+              <!-- button Daftar Buku -->
+              <div class="collapsed" data-bs-toggle="pill" data-bs-target="#v-pills-Daftar">
+                <div class="P-101"><a class="text-decoration-none text-black">Daftar Grup</a>
+                </div>
+              </div>
+
+              <div class="collapsed">
+                <div class="P-101"><a class="text-decoration-none text-black">Tambah Grup</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="invisible">
+      H. N. A.
+    </div>
+  </div>
+  <!-- end menu -->
+<script>
+  
+</script>
+</body>
+</html>

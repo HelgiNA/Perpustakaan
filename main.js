@@ -18,40 +18,6 @@ function myFunction() {
   //  }
 }
 
-function jml(n) {
-  var jmlT = 0;
-  jmlT = document.getElementById("iJml").value;
-  var hJml = add(jmlT);
-
-  if (isNaN(hJml).valueOf("false")) {
-    hJml = 0;
-  }
-
-  hJml += n;
-  if (hJml < 1) {
-    hJml = 1;
-  }
-
-  showJml(hJml);
-}
-
-function hrg(n) {
-  var hrgT = 0;
-  hrgT = document.getElementById("iHrg").value;
-  var hHrg = add(hrgT);
-
-  if (isNaN(hHrg).valueOf("false")) {
-    hHrg = 0;
-  }
-
-  hHrg += n * 1000;
-  if (hHrg < 1000) {
-    hHrg = 1000;
-  }
-
-  showHrg(hHrg);
-}
-
 function S(n) {
   var ST = 0;
   ST = document.getElementById("iS").value;
@@ -143,11 +109,11 @@ function myFunction() {
   }
 }
 
-function BMenu(n) {
+/*function BMenu(n) {
   let i = document.getElementsByClassName("CKMenu");
   for (let e = 0; e < i.length; e++) {
     i[e].style.display = "none";
   }
 
   document.getElementById("IBMenu(" + n + ")").style.display = "block";
-}
+}*/

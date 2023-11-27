@@ -1,5 +1,5 @@
 <!-- formulir Pengembalian Buku -->
-<div aria-label="tampilan form Pengembalian" class="tab-pane fade p-3" id="v-pills-PengembalianBuku">
+<div aria-label="tampilan form Pengembalian" class="p-3">
               <p class="h2">Form Pengembalian Buku</p>
               <hr>
               <form action="">

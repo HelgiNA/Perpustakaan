@@ -1,14 +1,12 @@
 <!-- Tampilan Formulir Buku -->
 <div
-  aria-label="tampilan form buku"
-  class="tab-pane fade p-3"
-  id="v-pills-TambahBuku"
+  aria-label="tampilan form buku" class="p-3"
 >
   <p class="h2">Form Buku</p>
   <hr />
-  <form action="TBuku.php" method="post">
+  <form action="" method="post" class="needs-validation" novalidate>
     <div class="row g-3">
-      <div class="col-12">
+      <div class="col-12 position-relative">
         <label for="Judul Buku" class="form-label">Judul Buku</label>
         <input
           type="text"
@@ -47,7 +45,7 @@
 
       <div class="col-sm-6">
         <label class="form-label" for="Penerbit">Penerbit</label>
-        <select class="form-select" name="Penerbit">
+        <select class="form-select" name="Penerbit" >
           <option value="">Pilih Penerbit</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -56,7 +54,7 @@
       </div>
 
       <div class="col-sm-6">
-        <label class="form-label" for="Pengarang">Pengarang</label>
+        <label class="form-label" for="Pengarang" >Pengarang</label>
         <select class="form-select" name="Pengarang">
           <option value="">Pilih Pengarang</option>
           <option value="1">One</option>
@@ -71,7 +69,7 @@
           <button onclick="jml(-1)" class="btn btn-primary" type="button">
             -
           </button>
-          <input class="form-control" type="number" id="iJml" name="Jumlah" />
+          <input class="form-control" type="number" id="iJml" name="Jumlah"  />
           <button onclick="jml(1)" class="btn btn-primary" type="button">
             +
           </button>
@@ -96,7 +94,7 @@
         <label for="Tahun Penerbitan" class="form-label"
           >Tahun Penerbitan</label
         >
-        <input type="text" class="YP form-control" name="Tahun Penerbitan"/>
+        <input type="text" class="YP form-control" name="Tahun Penerbitan" />
       </div>
 
       <div class="col-sm-6">
@@ -135,6 +133,3 @@
     </div>
   </form>
 </div>
-<?php
-  
-?>

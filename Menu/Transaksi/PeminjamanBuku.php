@@ -1,5 +1,5 @@
 <!-- formulir Peminjaman Buku -->
-<div aria-label="tampilan form Peminjaman" class="tab-pane fade p-3" id="v-pills-PeminjamanBuku">
+<div aria-label="tampilan form Peminjaman" class="p-3">
               <p class="h2">Form Peminjaman Buku</p>
               <hr>
               <form action="">

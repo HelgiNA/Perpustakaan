@@ -1,5 +1,5 @@
 <!-- formulir Tambah Anggota -->
-<div aria-label="tampilan form tambah anggota" class="tab-pane fade p-3" id="v-pills-TambahAnggota">
+<div aria-label="tampilan form tambah anggota" class="p-3">
               <p class="h2">Form Anggota</p>
               <hr>
               <form action="" method="post">

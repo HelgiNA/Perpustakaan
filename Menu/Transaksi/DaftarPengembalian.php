@@ -1,6 +1,5 @@
 <!-- Tampilan Daftar Pengembalian -->
-<div aria-label="Tampilan Daftar Pengembalian"
-            class="tab-pane fade" id="v-pills-DaftarPengembalian">
+<div aria-label="Tampilan Daftar Pengembalian">
               <p class="p-3 h2">Daftar Pengembalian</p>
               <hr>
               <form class="table-we" action="" method="get" accept-charset="utf-8">
