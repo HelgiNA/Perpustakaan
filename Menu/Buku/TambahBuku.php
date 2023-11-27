@@ -1,17 +1,38 @@
+
+
+
 <!-- Tampilan Formulir Buku -->
 <div
   aria-label="tampilan form buku" class="p-3"
 >
   <p class="h2">Form Buku</p>
   <hr />
-  <form action="" method="post" class="needs-validation" novalidate>
+  <div class="tab-content" id="pills-tabContent">
+  </div>
+  <?php
+  $servername = "127.0.0.1";
+  $username = "root";
+  $password = "";
+  $datadb = "perpustakaan";
+  
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $datadb);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  
+  $sql = "INSERT INTO `buku` (`Judul_Buku`, `Deskripsi`, `ISBN`, `ISBN_13`, `Kategori`, `Pengarang`, `Penerbit`, `Tahun_Penerbitan`, `Jumlah`, `Harga`, `Stok`, `Status`, `Diterima_Pada`) VALUES ('". $_POST["Judul_Buku"]."', '". $_POST["Deskripsi"]."', '". $_POST["ISBN"]."', '". $_POST["ISBN_13"]."', '". $_POST["Kategori"]."', '". $_POST["Pengarang"]."', '". $_POST["Penerbit"]."', '". $_POST["Tahun_Penerbitan"]."', '". $_POST["Jumlah"]."', '". $_POST["Harga"]."', '". $_POST["Jumlah"]."', '". $_POST["Status"]."', '". $_POST["Diterima_Pada"]."');";
+  $pesan = 
+  ?>
+  <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="post">
     <div class="row g-3">
       <div class="col-12 position-relative">
         <label for="Judul Buku" class="form-label">Judul Buku</label>
         <input
           type="text"
           class="form-control"
-          name="Judul Buku"
+          name="Judul_Buku"
         />
       </div>
 
@@ -29,7 +50,7 @@
         <input
           type="text"
           class="form-control"
-          name="ISBN 13"
+          name="ISBN_13"
         />
       </div>
 
@@ -94,12 +115,12 @@
         <label for="Tahun Penerbitan" class="form-label"
           >Tahun Penerbitan</label
         >
-        <input type="text" class="YP form-control" name="Tahun Penerbitan" />
+        <input type="text" class="YP form-control" name="Tahun_Penerbitan" />
       </div>
 
       <div class="col-sm-6">
         <label for="Diterima Pada" class="form-label">Diterima Pada</label>
-        <input type="text" class="DP form-control" name="Diterima Pada" />
+        <input type="text" class="DP form-control" name="Diterima_Pada" />
       </div>
 
       <div class="col-sm-6">
@@ -128,7 +149,11 @@
       </div>
 
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Simpan</button>
+        <button class="btn btn-primary" type="submit" onclick='<?php if ($conn->query($sql) === TRUE) {
+          $pesan = "bisa";
+  } else {
+    $pesan = "Tidak";
+  }?>'>Simpan</button>
       </div>
     </div>
   </form>

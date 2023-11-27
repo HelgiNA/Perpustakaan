@@ -42,48 +42,7 @@
           </tr>
         </thead>
         <tbody class="" id="TDaftarBuku">
-          <tr>
-             <td>1</td>
-             <td>Bisa</td>
-             <td>827</td>
-             <td>872</td>
-             <td>Tersedia</td>
-             <td></td>
-             <td>                      <div class='btn-group px-1' role='group' aria-label='Third group'>
-                                     <button type='button' class='btn btn-outline-info btn-sm'>
-                                       <i class='bi bi-pencil l-square'></i>
-                                     </button>
-                                   </div>
-                                   <div class='btn-group px-1' role='group' aria-label='Third group'>
-                                     <button type='button' class='btn btn-outline-danger btn-sm'>
-                                       <i style='width: 5px; height: 5px' class='bi bi-trash3'></i>
-                                     </button>
-                                   </div></td>
-          </tr>
-          <tr>
-             <td>2</td>
-             <td>GK</td>
-             <td>827</td>
-             <td>872</td>
-             <td>Tidak Tersedia</td>
-             <td></td>
-          </tr>
-          <tr>
-             <td>3</td>
-             <td>Bisa</td>
-             <td>827</td>
-             <td>872</td>
-             <td>Tidak Tersedia</td>
-             <td></td>
-          </tr>
-          <tr>
-             <td>4</td>
-             <td>GK</td>
-             <td>827</td>
-             <td>872</td>
-             <td>Tersedia</td>
-             <td></td>
-          </tr>
+          
           <?php
           include("../../Koneksi.php");
             $sql = "SELECT * FROM buku";
